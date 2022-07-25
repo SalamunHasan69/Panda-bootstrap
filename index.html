@@ -7,14 +7,15 @@
   <title>Panda Bootstrap</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <!-- 
     Header start
   -->
-  <header class="container">
-    <nav class="navbar navbar-expand-lg bg-light">
+  <header>
+    <nav class="navbar container fixed-top navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand" href="#"><img src="./images/logo.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -30,13 +31,13 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Product</a>
+              <a class="nav-link active" aria-current="page" href="#Categories">Categories</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">About Us</a>
+              <a class="nav-link active" aria-current="page" href="#Shoes">Shoes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">Contact Us</a>
+              <a class="nav-link active" aria-current="page" href="#Subscribe">Subscribe</a>
             </li>
           </ul>
         </div>
@@ -52,7 +53,7 @@
   <section class="container my-5">
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item active p-5 bg-light border border-white border rounded">
+        <div class="carousel-item active p-5 panda-bg-light border border-white border rounded">
           <div class="row">
             <div class="col-lg-8 d-flex align-items-center">
               <div>
@@ -61,7 +62,7 @@
                   do amet sint. Velit officia consequat duis enim velit mollit.
                   Exercitation veniam consequat sunt nostrud amet.</p>
                 <h2>$1289</h2>
-                <button class="btn btn-primary">BUY NOW</button>
+                <button class="btn btn-dark">BUY NOW</button>
               </div>
             </div>
             <div class="col-lg-4">
@@ -69,7 +70,7 @@
             </div>
           </div>
         </div>
-        <div class="carousel-item active p-5 bg-light border border-white border rounded">
+        <div class="carousel-item active p-5 panda-bg-light border border-white border rounded">
           <div class="row">
             <div class="col-lg-8 d-flex align-items-center">
               <div>
@@ -78,7 +79,7 @@
                   do amet sint. Velit officia consequat duis enim velit mollit.
                   Exercitation veniam consequat sunt nostrud amet.</p>
                 <h2>$1289</h2>
-                <button class="btn btn-primary">BUY NOW</button>
+                <button class="btn btn-dark">BUY NOW</button>
               </div>
             </div>
             <div class="col-lg-4">
@@ -86,7 +87,7 @@
             </div>
           </div>
         </div>
-        <div class="carousel-item active p-5 bg-light border border-white border rounded">
+        <div class="carousel-item active p-5 panda-bg-light border border-white border rounded">
           <div class="row">
             <div class="col-lg-8 d-flex align-items-center">
               <div>
@@ -95,7 +96,7 @@
                   do amet sint. Velit officia consequat duis enim velit mollit.
                   Exercitation veniam consequat sunt nostrud amet.</p>
                 <h2>$1289</h2>
-                <button class="btn btn-primary">BUY NOW</button>
+                <button class="btn btn-dark">BUY NOW</button>
               </div>
             </div>
             <div class="col-lg-4">
@@ -117,7 +118,7 @@
     </div>
   </section>
   <!---Categories start--->
-  <section class="container my-5">
+  <section class="container my-5" id="Categories">
     <h2>Categories</h2>
     <div>
       <div class="row g-2">
@@ -145,7 +146,7 @@
   </section>
   <!---Categories end--->
   <!---Shoes section start--->
-  <section class="container my-5">
+  <section class="container my-5" id="Shoes">
     <h2>Shoes</h2>
     <div class="row row-cols-1 row-cols-md-3 g-5">
       <div class="col-sm-12 col-md-6 col-lg-4">
@@ -187,6 +188,21 @@
     </div>
   </section>
   <!---Shoes section end--->
+  <!-- Subscribe -->
+  <section style="height: 300px;"
+    class="container panda-bg-light text-white d-flex justify-content-center align-items-center" id="Subscribe">
+    <div>
+      <h1 class="text-dark">LET'S STAY IN TOUCH</h1>
+      <p class="text-dark">Get updates on sales specials and more</p>
+      <form>
+        <div class="mb-1">
+          <input type="email" placeholder="Enter your email" class="form-control" id="exampleInputEmail1"
+            aria-describedby="emailHelp">
+        </div>
+        <button type="submit" class="btn btn-dark">Submit</button>
+      </form>
+    </div>
+  </section>
   <!--
     Main end
   -->
